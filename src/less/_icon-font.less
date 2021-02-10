@@ -1,0 +1,177 @@
+
+.icon-base-pseudo {
+	font-family: "icon-font";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@add-user: "\F001";
+	@album_photos: "\F002";
+	@busca: "\F003";
+	@chevron-right: "\F004";
+	@close: "\F005";
+	@coracao: "\F006";
+	@event_info: "\F007";
+	@facebook-logo: "\F008";
+	@gift-2: "\F009";
+	@hamburguer: "\F00A";
+	@instagram-logo: "\F00B";
+	@location-point: "\F00C";
+	@logout: "\F00D";
+	@money-exchange: "\F00E";
+	@remove-user: "\F00F";
+	@settings: "\F010";
+	@spotify: "\F011";
+	@twitter-logo-silhouette: "\F012";
+	@upload: "\F013";
+	@wifi-connection-signal-symbol: "\F014";
+	@youtube-logo: "\F015";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-add-user {
+	.icon(add-user);
+}
+.icon-album_photos {
+	.icon(album_photos);
+}
+.icon-busca {
+	.icon(busca);
+}
+.icon-chevron-right {
+	.icon(chevron-right);
+}
+.icon-close {
+	.icon(close);
+}
+.icon-coracao {
+	.icon(coracao);
+}
+.icon-event_info {
+	.icon(event_info);
+}
+.icon-facebook-logo {
+	.icon(facebook-logo);
+}
+.icon-gift-2 {
+	.icon(gift-2);
+}
+.icon-hamburguer {
+	.icon(hamburguer);
+}
+.icon-instagram-logo {
+	.icon(instagram-logo);
+}
+.icon-location-point {
+	.icon(location-point);
+}
+.icon-logout {
+	.icon(logout);
+}
+.icon-money-exchange {
+	.icon(money-exchange);
+}
+.icon-remove-user {
+	.icon(remove-user);
+}
+.icon-settings {
+	.icon(settings);
+}
+.icon-spotify {
+	.icon(spotify);
+}
+.icon-twitter-logo-silhouette {
+	.icon(twitter-logo-silhouette);
+}
+.icon-upload {
+	.icon(upload);
+}
+.icon-wifi-connection-signal-symbol {
+	.icon(wifi-connection-signal-symbol);
+}
+.icon-youtube-logo {
+	.icon(youtube-logo);
+}
+
+
+.icon-add-user-after {
+	.icon(add-user, after);
+}
+.icon-album_photos-after {
+	.icon(album_photos, after);
+}
+.icon-busca-after {
+	.icon(busca, after);
+}
+.icon-chevron-right-after {
+	.icon(chevron-right, after);
+}
+.icon-close-after {
+	.icon(close, after);
+}
+.icon-coracao-after {
+	.icon(coracao, after);
+}
+.icon-event_info-after {
+	.icon(event_info, after);
+}
+.icon-facebook-logo-after {
+	.icon(facebook-logo, after);
+}
+.icon-gift-2-after {
+	.icon(gift-2, after);
+}
+.icon-hamburguer-after {
+	.icon(hamburguer, after);
+}
+.icon-instagram-logo-after {
+	.icon(instagram-logo, after);
+}
+.icon-location-point-after {
+	.icon(location-point, after);
+}
+.icon-logout-after {
+	.icon(logout, after);
+}
+.icon-money-exchange-after {
+	.icon(money-exchange, after);
+}
+.icon-remove-user-after {
+	.icon(remove-user, after);
+}
+.icon-settings-after {
+	.icon(settings, after);
+}
+.icon-spotify-after {
+	.icon(spotify, after);
+}
+.icon-twitter-logo-silhouette-after {
+	.icon(twitter-logo-silhouette, after);
+}
+.icon-upload-after {
+	.icon(upload, after);
+}
+.icon-wifi-connection-signal-symbol-after {
+	.icon(wifi-connection-signal-symbol, after);
+}
+.icon-youtube-logo-after {
+	.icon(youtube-logo, after);
+}
+

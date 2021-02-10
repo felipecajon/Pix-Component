@@ -1,0 +1,33 @@
+.slick-initialized {
+	.slick-slide {
+		&:focus {
+			outline: 0;
+		}
+	}
+
+	.slick-arrow {
+		position: absolute;
+
+		&.glyphicon-chevron-left,
+		&.glyphicon-chevron-right {
+			transform: rotate(0deg);
+			padding: 10px 5px;
+
+			z-index: 1;
+			top: 50%;
+			margin-top: -10px;
+
+			cursor: pointer;
+
+			color: red;
+		}
+		
+		&.glyphicon-chevron-left {
+			left: 0;
+		}
+
+		&.glyphicon-chevron-right {
+			right: 0;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.selectAC-container {
+	position: relative;
+
+	&.type-container {
+		&-1 {
+			.selectAC-containerOptions {
+				top: 58px;
+			}
+
+			i {
+				top: 30px;
+			}
+		}
+
+		&-2 {
+			.selectAC-containerOptions {
+				top: 34px;
+			}
+
+			i {
+				top: 6px;
+			}
+		}
+	}
+
+	.selectAC-containerOptions {
+		display: none;
+
+		position: absolute;
+		
+		
+		width: 100%;
+		background: #fff;
+		max-height: 100px;
+		overflow: auto;
+		border: 1px solid #ccc;
+		z-index: 1;
+
+		&.active {
+			display: block;
+		}
+	}
+
+	input {
+		width: 100%;
+		padding-right: 20px;
+		text-overflow: ellipsis;
+	}
+
+	i {
+		position: absolute;
+		right: 6px;
+		transform: rotate(90deg);
+		cursor: pointer;
+	}
+
+	option {
+		&:hover {
+			background: blue;
+			cursor: pointer;
+			color: white;
+		}
+	}
+}

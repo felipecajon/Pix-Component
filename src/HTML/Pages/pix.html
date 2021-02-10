@@ -1,0 +1,74 @@
+<h2 class="m-b-20">Pix</h2>
+
+<div class="doc">
+    <h3>Eventos</h3>
+
+    <div class="bg-4 p-20 m-t-20">
+        <h4>generateCode:</h4>
+        Irá criar o QrCode
+
+        <div class="box-param">
+            <p class="fw-bold m-t-20">Parametros</p>
+            <p class="m-t-8">
+                <strong>1º (String):</strong> Texto / Código que dará origem ao QrCode. 
+            </p>
+
+            <p class="m-t-8">
+                <strong>2º (Object):</strong> Configurações opcionais
+            </p>
+
+            <ul class="m-l-16">
+                <li class="m-t-4">
+                    <strong>size: (default | 300)</strong> Tamanho em px que o QrCode deverá ser exibido 
+                </li>
+
+                <li class="m-t-4">
+                    <strong>setInterval: (default | 2000)</strong> Tempo ( em milisegundos ) entre as futuras requisições sobre o status do pagamento
+                </li>
+
+                <li class="m-t-4">
+                    <strong>url: (default | http://localhost:3000/response.json)</strong> API de consulta de status.
+                </li>
+            </ul>
+
+            <p class="m-t-20">
+                <strong>OBS:</strong> São 3 os possiveis status que devem retornar da API: <strong>true</strong>, <strong>false</strong> ou <strong>waiting</strong>. Para fins didaticos há um arquivo chamado response.json neste exemplo que simula a resposta do servidor, deixe-o sempre com o status 'waiting' para ver que o front fará varias requisições, enquanto isso altere o status para um dos outros 2 possiveis status simbolizando uma troca de resposta pelo servidor. 
+            </p>
+        </div>
+
+        <div class="box-action d-flex h-end m-t-20">
+            <a target="_blank" href="src/js/Pages/page--Pix.js" class="btn btn-primary">
+                Ver exemplo de implementação
+            </a>
+        </div>
+    </div>
+
+    <h3 class="m-t-20">Exemplo</h3>
+
+    <div class="d-flex h-center">
+        <div class="form-group" style="width: 100%; max-width: 500px;">
+            <input type="text" class="form-control js-generate-code" placeholder="Insira o cod. de pagamento....">
+        </div>
+    </div>
+
+    <div class="qr-code-container">
+        <div class="box-qr-code">
+            <div class="js-qr-code"></div>
+        </div>
+    </div>
+
+    <h3 class="m-t-20">Instalar</h3>
+
+    <div class="install">
+        <p class="m-t-8">
+            <b>JS (Component): </b> <a href="../src/js/Components/pix.js" target="_blank"> pix.js </a>
+        </p>
+        <p class="m-t-8">
+            <b>CSS (Component): </b> <a href="../src/less/Components/pix.less" target="_blank"> pix.less </a>
+        </p>
+        <p class="m-t-8">
+            <b>TAG (Component): </b> <a href="../src/TagComponents/pix.tag" target="_blank"> pix.tag </a>
+        </p>
+    </div>
+
+</div>
